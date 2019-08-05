@@ -1,0 +1,17 @@
+{
+  "name": "datk",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
