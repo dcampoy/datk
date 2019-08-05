@@ -1,4 +1,4 @@
-const jql = require('./index.js')
+const datk = require('./index.js')
 
 const rows = [
   { id: 2, name: 'John', 'surname': 'Doe', age: 31 },
@@ -22,7 +22,7 @@ describe('groupBy operation', () => {
       ]
     }
 
-    expect(jql.groupBy(rows, 'name')).toEqual(expected)
+    expect(datk.groupBy(rows, 'name')).toEqual(expected)
   })
 
   it('assumed the string "undefined" for unexisting field ', () => {
@@ -35,7 +35,7 @@ describe('groupBy operation', () => {
       ]
     }
 
-    expect(jql.groupBy(rows, 'foo')).toEqual(expected)
+    expect(datk.groupBy(rows, 'foo')).toEqual(expected)
   })
 })
 
@@ -55,7 +55,7 @@ describe('categorise', () => {
       return 'undefined'
     }
 
-    expect(jql.categorise(rows, categoryMethod, 'category')).toEqual(expected)
+    expect(datk.categorise(rows, categoryMethod, 'category')).toEqual(expected)
   })
 })
 

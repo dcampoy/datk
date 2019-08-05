@@ -2,7 +2,12 @@
 
 datk is a lightweight toolkit for working with data array.
 
-Example of use:
+### Installing
+```bash
+yarn add datk
+```
+
+### Example of use
 ```js
 import datk from 'datk'
 
